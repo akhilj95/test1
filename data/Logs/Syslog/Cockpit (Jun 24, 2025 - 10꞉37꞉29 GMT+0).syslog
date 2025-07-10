@@ -1,0 +1,1216 @@
+{
+  "initialDate": "Jun 24, 2025",
+  "initialTime": "10꞉37꞉29 GMT+0",
+  "events": [
+    {
+      "epoch": 1750761449884,
+      "level": "debug",
+      "msg": " Registered new action Camera Zoom (MAVLink) with id (mavlink-message-action (Camera Zoom (MAVLink)))."
+    },
+    {
+      "epoch": 1750761449884,
+      "level": "debug",
+      "msg": " Registered new action Camera Focus (MAVLink) with id (mavlink-message-action (Camera Focus (MAVLink)))."
+    },
+    {
+      "epoch": 1750761449889,
+      "level": "warn",
+      "msg": " Filesystem storage is only available in Electron."
+    },
+    {
+      "epoch": 1750761449889,
+      "level": "warn",
+      "msg": " Filesystem storage is only available in Electron."
+    },
+    {
+      "epoch": 1750761449970,
+      "level": "log",
+      "msg": " Initializing Sentry telemetry..."
+    },
+    {
+      "epoch": 1750761450104,
+      "level": "debug",
+      "msg": " Error: Needs to handle multiple connections and change the main connection when necessary.This can be done by checking the data coming from the connection and changing after a timeout."
+    },
+    {
+      "epoch": 1750761450105,
+      "level": "log",
+      "msg": " Main connection changed: ws://192.168.2.2/mavlink2rest/ws/mavlink"
+    },
+    {
+      "epoch": 1750761450234,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-mini-widgets-profile-v4' with BlueOS."
+    },
+    {
+      "epoch": 1750761450234,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-saved-profiles-v8' with BlueOS."
+    },
+    {
+      "epoch": 1750761450234,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-default-vehicle-type-profiles' with BlueOS."
+    },
+    {
+      "epoch": 1750761450234,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-mini-widget-last-values' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-enable-voice-alerts' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-never-show-armed-menu-warning' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-selected-alert-speech-voice' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-enabled-alert-levels' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-protocol-mappings-v1' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-protocol-mapping-index-v1' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-standard-mappings-v2' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-hold-last-joystick-input-when-window-hidden' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-default-vehicle-type-protocol-mappings' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-actions-joystick-confirm-required' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-custom-rtc-config' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-ui-glass-effect' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-display-unit-preferences' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-main-menu-style' with BlueOS."
+    },
+    {
+      "epoch": 1750761450235,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-has-seen-tutorial' with BlueOS."
+    },
+    {
+      "epoch": 1750761450237,
+      "level": "log",
+      "msg": " Using WebRTC configuration from storage."
+    },
+    {
+      "epoch": 1750761450237,
+      "level": "debug",
+      "msg": " [WebRTC] Using webrtc-adapter for [object Object]"
+    },
+    {
+      "epoch": 1750761450237,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761450237,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450341,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450342,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450342,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450342,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450342,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761450446,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller Connected [object Event]"
+    },
+    {
+      "epoch": 1750761450473,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761450473,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761450473,
+      "level": "debug",
+      "msg": " Activated stream 'UDP Stream 0'."
+    },
+    {
+      "epoch": 1750761450657,
+      "level": "debug",
+      "msg": " Error: We need to have a better way to generate a unique id based on the vehicle hardware"
+    },
+    {
+      "epoch": 1750761450657,
+      "level": "info",
+      "msg": " Creating a new Vehicle:\n \tname: improved-seahorse\n \tidentification: 0853f5ac-08ab-48cb-a187-3615b3cbd592\n \ttype: sub\n \tfirmware: ardupilot\n"
+    },
+    {
+      "epoch": 1750761450661,
+      "level": "log",
+      "msg": " Vehicle type changed to MAV_TYPE_SUBMARINE"
+    },
+    {
+      "epoch": 1750761450661,
+      "level": "info",
+      "msg": " Loaded default joystick protocol mapping for vehicle type MAV_TYPE_SUBMARINE."
+    },
+    {
+      "epoch": 1750761450661,
+      "level": "info",
+      "msg": " Loaded default profile for vehicle type MAV_TYPE_SUBMARINE."
+    },
+    {
+      "epoch": 1750761450662,
+      "level": "log",
+      "msg": " Last connected user set to ai4ports."
+    },
+    {
+      "epoch": 1750761450666,
+      "level": "log",
+      "msg": " Vehicle connected"
+    },
+    {
+      "epoch": 1750761450667,
+      "level": "error",
+      "msg": " SpeechSynthesisUtterance error: not-allowed"
+    },
+    {
+      "epoch": 1750761450667,
+      "level": "info",
+      "msg": " Vehicle disarmed"
+    },
+    {
+      "epoch": 1750761450667,
+      "level": "info",
+      "msg": " Vehicle mode changed to MANUAL."
+    },
+    {
+      "epoch": 1750761450669,
+      "level": "debug",
+      "msg": " Snackbar success message: Vehicle connected"
+    },
+    {
+      "epoch": 1750761450815,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761450821,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761450821,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761450826,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761450834,
+      "level": "info",
+      "msg": " Snackbar info message:"
+    },
+    {
+      "epoch": 1750761450907,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller Connected [object Event]"
+    },
+    {
+      "epoch": 1750761450921,
+      "level": "error",
+      "msg": " Failed to get position: (1) Only secure origins are allowed (see: https://goo.gl/Y0ZkNV)."
+    },
+    {
+      "epoch": 1750761450925,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450925,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450925,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450926,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450926,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450926,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450926,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450927,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450927,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450927,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450928,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450928,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450928,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450928,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450929,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450929,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450929,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450929,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450929,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450930,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450930,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450930,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450930,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450930,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450931,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450931,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450931,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450931,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450931,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450932,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450932,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450932,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450932,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450933,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450933,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450934,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450934,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450934,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450934,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450935,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450935,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450935,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450935,
+      "level": "debug",
+      "msg": " Received command acknowledgment: [object Object]"
+    },
+    {
+      "epoch": 1750761450935,
+      "level": "log",
+      "msg": " Successfully requested all default messages from vehicle."
+    },
+    {
+      "epoch": 1750761450942,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (159)"
+    },
+    {
+      "epoch": 1750761450949,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (251)"
+    },
+    {
+      "epoch": 1750761450953,
+      "level": "debug",
+      "msg": " Executing action callback for action mavlink-message-action (Camera Zoom (MAVLink))."
+    },
+    {
+      "epoch": 1750761450953,
+      "level": "debug",
+      "msg": " Executing action callback for action mavlink-message-action (Camera Focus (MAVLink))."
+    },
+    {
+      "epoch": 1750761450966,
+      "level": "log",
+      "msg": " Finished loading"
+    },
+    {
+      "epoch": 1750761451024,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (134)"
+    },
+    {
+      "epoch": 1750761451095,
+      "level": "log",
+      "msg": " New mode is the same as the current one. No mode-change commands will be issued."
+    },
+    {
+      "epoch": 1750761451096,
+      "level": "log",
+      "msg": " New mode is the same as the current one. No mode-change commands will be issued."
+    },
+    {
+      "epoch": 1750761451097,
+      "level": "log",
+      "msg": " New mode is the same as the current one. No mode-change commands will be issued."
+    },
+    {
+      "epoch": 1750761451098,
+      "level": "log",
+      "msg": " New mode is the same as the current one. No mode-change commands will be issued."
+    },
+    {
+      "epoch": 1750761451105,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (295)"
+    },
+    {
+      "epoch": 1750761451106,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (11030)"
+    },
+    {
+      "epoch": 1750761451107,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (11031)"
+    },
+    {
+      "epoch": 1750761451110,
+      "level": "info",
+      "msg": " No ap_message for mavlink id (11032)"
+    },
+    {
+      "epoch": 1750761451120,
+      "level": "info",
+      "msg": " ArduSub V4.5.3 (80e8c23a)"
+    },
+    {
+      "epoch": 1750761451122,
+      "level": "info",
+      "msg": " 237101b0a919477d85c7465439e3bea0"
+    },
+    {
+      "epoch": 1750761451124,
+      "level": "info",
+      "msg": " IMU0: fast sampling enabled 8.0kHz/1.0kHz"
+    },
+    {
+      "epoch": 1750761451126,
+      "level": "info",
+      "msg": " Frame: VECTORED_6DOF"
+    },
+    {
+      "epoch": 1750761451287,
+      "level": "warn",
+      "msg": " Window/tab hidden. Disabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761451289,
+      "level": "log",
+      "msg": " Event sent successfully: App started-1750761449970"
+    },
+    {
+      "epoch": 1750761452340,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761452340,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761452340,
+      "level": "debug",
+      "msg": " Activated stream 'Stream 1'."
+    },
+    {
+      "epoch": 1750761452342,
+      "level": "debug",
+      "msg": " Detected changes in the local value for key 'cockpit-mini-widgets-profile-v4'. Updating BlueOS."
+    },
+    {
+      "epoch": 1750761452342,
+      "level": "debug",
+      "msg": " Value of 'cockpit-mini-widgets-profile-v4' changed, but we haven't finished the initial fetch. Not updating BlueOS."
+    },
+    {
+      "epoch": 1750761452345,
+      "level": "debug",
+      "msg": " Detected changes in the local value for key 'cockpit-saved-profiles-v8'. Updating BlueOS."
+    },
+    {
+      "epoch": 1750761452345,
+      "level": "debug",
+      "msg": " Value of 'cockpit-saved-profiles-v8' changed, but we haven't finished the initial fetch. Not updating BlueOS."
+    },
+    {
+      "epoch": 1750761452359,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller Connected [object Event]"
+    },
+    {
+      "epoch": 1750761452376,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-mini-widgets-profile-v4' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452376,
+      "level": "debug",
+      "msg": " Value for 'cockpit-mini-widgets-profile-v4' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452405,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-saved-profiles-v8' from BlueOS: [object Object],[object Object],[object Object]"
+    },
+    {
+      "epoch": 1750761452405,
+      "level": "debug",
+      "msg": " Value for 'cockpit-saved-profiles-v8' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452428,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-default-vehicle-type-profiles' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452429,
+      "level": "debug",
+      "msg": " Value for 'cockpit-default-vehicle-type-profiles' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452457,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-enable-voice-alerts' from BlueOS: true"
+    },
+    {
+      "epoch": 1750761452457,
+      "level": "debug",
+      "msg": " Value for 'cockpit-enable-voice-alerts' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452480,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-mini-widget-last-values' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452480,
+      "level": "debug",
+      "msg": " Value for 'cockpit-mini-widget-last-values' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452505,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-never-show-armed-menu-warning' from BlueOS: false"
+    },
+    {
+      "epoch": 1750761452505,
+      "level": "debug",
+      "msg": " Value for 'cockpit-never-show-armed-menu-warning' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452527,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-selected-alert-speech-voice' from BlueOS: Google US English"
+    },
+    {
+      "epoch": 1750761452527,
+      "level": "debug",
+      "msg": " Value for 'cockpit-selected-alert-speech-voice' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452556,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-enabled-alert-levels' from BlueOS: [object Object],[object Object],[object Object],[object Object],[object Object]"
+    },
+    {
+      "epoch": 1750761452556,
+      "level": "debug",
+      "msg": " Value for 'cockpit-enabled-alert-levels' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452583,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-protocol-mappings-v1' from BlueOS: [object Object],[object Object],[object Object]"
+    },
+    {
+      "epoch": 1750761452583,
+      "level": "debug",
+      "msg": " Value for 'cockpit-protocol-mappings-v1' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452608,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-protocol-mapping-index-v1' from BlueOS: 0"
+    },
+    {
+      "epoch": 1750761452608,
+      "level": "debug",
+      "msg": " Value for 'cockpit-protocol-mapping-index-v1' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452642,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-hold-last-joystick-input-when-window-hidden' from BlueOS: false"
+    },
+    {
+      "epoch": 1750761452642,
+      "level": "debug",
+      "msg": " Value for 'cockpit-hold-last-joystick-input-when-window-hidden' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452675,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-standard-mappings-v2' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452675,
+      "level": "debug",
+      "msg": " Value for 'cockpit-standard-mappings-v2' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452704,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-actions-joystick-confirm-required' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452704,
+      "level": "debug",
+      "msg": " Value for 'cockpit-actions-joystick-confirm-required' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452736,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-default-vehicle-type-protocol-mappings' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452736,
+      "level": "debug",
+      "msg": " Value for 'cockpit-default-vehicle-type-protocol-mappings' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452774,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-custom-rtc-config' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452774,
+      "level": "debug",
+      "msg": " Value for 'cockpit-custom-rtc-config' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452806,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-ui-glass-effect' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452806,
+      "level": "debug",
+      "msg": " Value for 'cockpit-ui-glass-effect' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452841,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-display-unit-preferences' from BlueOS: [object Object]"
+    },
+    {
+      "epoch": 1750761452841,
+      "level": "debug",
+      "msg": " Value for 'cockpit-display-unit-preferences' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452865,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-main-menu-style' from BlueOS: center-left"
+    },
+    {
+      "epoch": 1750761452865,
+      "level": "debug",
+      "msg": " Value for 'cockpit-main-menu-style' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761452895,
+      "level": "debug",
+      "msg": " Success getting value of 'cockpit-has-seen-tutorial' from BlueOS: true"
+    },
+    {
+      "epoch": 1750761452895,
+      "level": "debug",
+      "msg": " Value for 'cockpit-has-seen-tutorial' on BlueOS is the same as the local one. No need to update."
+    },
+    {
+      "epoch": 1750761453322,
+      "level": "log",
+      "msg": " New stream for 'UDP Stream 0':"
+    },
+    {
+      "epoch": 1750761453322,
+      "level": "log",
+      "msg": " {\n  \"id\": \"34535e9e-82d6-47a8-a458-2b12ec6b4603\",\n  \"name\": \"UDP Stream 0\",\n  \"encode\": \"H264\",\n  \"height\": 1080,\n  \"width\": 1920,\n  \"interval\": \"0.033333335\",\n  \"source\": \"/dev/video2\",\n  \"created\": null\n}"
+    },
+    {
+      "epoch": 1750761453322,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761453322,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761453322,
+      "level": "debug",
+      "msg": " Activated stream 'UDP Stream 0'."
+    },
+    {
+      "epoch": 1750761453323,
+      "level": "debug",
+      "msg": " [WebRTC] Selected stream changed from \"undefined\" to \"34535e9e-82d6-47a8-a458-2b12ec6b4603\"."
+    },
+    {
+      "epoch": 1750761453333,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller Connected [object Event]"
+    },
+    {
+      "epoch": 1750761454339,
+      "level": "error",
+      "msg": " [WebRTC] Failed to start a new Session with \"UDP Stream 0\". Reason: not available"
+    },
+    {
+      "epoch": 1750761455381,
+      "level": "info",
+      "msg": " Window/tab visible. Enabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761455393,
+      "level": "debug",
+      "msg": " [WebRTC] Starting session with producer \"34535e9e-82d6-47a8-a458-2b12ec6b4603\" (\"UDP Stream 0\")"
+    },
+    {
+      "epoch": 1750761455393,
+      "level": "debug",
+      "msg": " [WebRTC] Requesting stream: [object Object]"
+    },
+    {
+      "epoch": 1750761455405,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] Creating RTCPeerConnection"
+    },
+    {
+      "epoch": 1750761455425,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Registering parseEndSessionQuestion callbacks for Consumer \"51f3c412-a680-4180-838e-453a545dd707\", Producer \"34535e9e-82d6-47a8-a458-2b12ec6b4603\", Session \"f631812d-d0b0-4dd9-b3c0-a5dfc9b666bb\", "
+    },
+    {
+      "epoch": 1750761455425,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Registering parseNegotiation callbacks for Consumer \"51f3c412-a680-4180-838e-453a545dd707\", Producer \"34535e9e-82d6-47a8-a458-2b12ec6b4603\", Session \"f631812d-d0b0-4dd9-b3c0-a5dfc9b666bb\", "
+    },
+    {
+      "epoch": 1750761455425,
+      "level": "debug",
+      "msg": " [WebRTC] Session f631812d-d0b0-4dd9-b3c0-a5dfc9b666bb successfully started"
+    },
+    {
+      "epoch": 1750761455439,
+      "level": "debug",
+      "msg": " Peer Connection is waiting for negotiation..."
+    },
+    {
+      "epoch": 1750761455449,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] Signalling state changed to \"new\""
+    },
+    {
+      "epoch": 1750761455449,
+      "level": "debug",
+      "msg": " RTCRtpReceiver jitterBufferTarget attribute set from null to 0"
+    },
+    {
+      "epoch": 1750761455449,
+      "level": "debug",
+      "msg": " RTCRtpReceiver playoutDelayHint attribute set from null to null"
+    },
+    {
+      "epoch": 1750761455449,
+      "level": "debug",
+      "msg": " RTCRtpReceiver jitterBufferTarget attribute set from null to 0"
+    },
+    {
+      "epoch": 1750761455449,
+      "level": "debug",
+      "msg": " RTCRtpReceiver playoutDelayHint attribute set from null to null"
+    },
+    {
+      "epoch": 1750761455450,
+      "level": "debug",
+      "msg": " [WebRTC] Track added"
+    },
+    {
+      "epoch": 1750761455450,
+      "level": "debug",
+      "msg": " Event: [object RTCTrackEvent]"
+    },
+    {
+      "epoch": 1750761455450,
+      "level": "debug",
+      "msg": " Settings: [object Object]"
+    },
+    {
+      "epoch": 1750761455450,
+      "level": "debug",
+      "msg": " Constraints: [object Object]"
+    },
+    {
+      "epoch": 1750761455450,
+      "level": "debug",
+      "msg": " Capabilities: [object Object]"
+    },
+    {
+      "epoch": 1750761455452,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] Remote description set to {\n    \"type\": \"offer\",\n    \"sdp\": \"v=0\\r\\no=- 3768696593149485345 0 IN IP4 0.0.0.0\\r\\ns=-\\r\\nt=0 0\\r\\na=ice-options:trickle\\r\\na=group:BUNDLE video0\\r\\nm=video 9 UDP/TLS/RTP/SAVPF 96 97\\r\\nc=IN IP4 0.0.0.0\\r\\na=setup:actpass\\r\\na=ice-ufrag:e9Sqig3mQATqz6Z2kGl6HmthPqh0KN95\\r\\na=ice-pwd:1VDQzdnohZg4MXARPLhGPVjy/02m11PR\\r\\na=rtcp-mux\\r\\na=rtcp-rsize\\r\\na=sendonly\\r\\na=rtpmap:96 H264/90000\\r\\na=rtcp-fb:96 nack\\r\\na=rtcp-fb:96 nack pli\\r\\na=rtcp-fb:96 ccm fir\\r\\na=rtcp-fb:96 transport-cc\\r\\na=framerate:30\\r\\na=fmtp:96 sprop-parameter-sets=Z01AKZZUA8ARPyo=,aO44gA==;packetization-mode=1;profile-level-id=42e01f;level-asymmetry-allowed=1\\r\\na=rtpmap:97 rtx/90000\\r\\na=fmtp:97 apt=96\\r\\na=ssrc-group:FID 3683065028 2072933763\\r\\na=ssrc:3683065028 msid:user2160162653@host-685be9a6 webrtctransceiver1\\r\\na=ssrc:3683065028 cname:user2160162653@host-685be9a6\\r\\na=ssrc:2072933763 msid:user2160162653@host-685be9a6 webrtctransceiver1\\r\\na=ssrc:2072933763 cname:user2160162653@host-685be9a6\\r\\na=mid:video0\\r\\na=fingerprint:sha-256 D8:E7:51:A2:18:7B:72:12:67:F3:89:BF:6A:6D:1E:0A:9B:99:AA:F3:04:53:CB:3E:7F:DD:75:1A:43:BB:3C:7B\\r\\na=rtcp-mux-only\\r\\n\"\n}"
+    },
+    {
+      "epoch": 1750761455462,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICE candidate added. {\n    \"candidate\": \"candidate:1 1 UDP 2015363327 192.168.2.2 42592 typ host\",\n    \"sdpMLineIndex\": 0\n}"
+    },
+    {
+      "epoch": 1750761455463,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICE candidate added. {\n    \"candidate\": \"candidate:2 1 TCP 1015021823 192.168.2.2 9 typ host tcptype active\",\n    \"sdpMLineIndex\": 0\n}"
+    },
+    {
+      "epoch": 1750761455464,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICE candidate added. {\n    \"candidate\": \"candidate:3 1 TCP 1010827519 192.168.2.2 43457 typ host tcptype passive\",\n    \"sdpMLineIndex\": 0\n}"
+    },
+    {
+      "epoch": 1750761455465,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] SDP Answer created as: {\n    \"sdp\": \"v=0\\r\\no=- 6302073626097263386 2 IN IP4 127.0.0.1\\r\\ns=-\\r\\nt=0 0\\r\\na=group:BUNDLE video0\\r\\na=msid-semantic: WMS\\r\\nm=video 9 UDP/TLS/RTP/SAVPF 96 97\\r\\nc=IN IP4 0.0.0.0\\r\\na=rtcp:9 IN IP4 0.0.0.0\\r\\na=ice-ufrag:Mx2a\\r\\na=ice-pwd:rVKhLr0BULpk7ATIoDhDkrno\\r\\na=ice-options:trickle\\r\\na=fingerprint:sha-256 B8:20:6F:49:08:14:B9:FE:D1:50:BE:4D:58:09:74:11:C7:A7:E7:DA:D5:7E:3A:49:69:79:2E:43:E9:5A:3B:EA\\r\\na=setup:active\\r\\na=mid:video0\\r\\na=recvonly\\r\\na=rtcp-mux\\r\\na=rtcp-rsize\\r\\na=rtpmap:96 H264/90000\\r\\na=rtcp-fb:96 transport-cc\\r\\na=rtcp-fb:96 ccm fir\\r\\na=rtcp-fb:96 nack\\r\\na=rtcp-fb:96 nack pli\\r\\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\\r\\na=rtpmap:97 rtx/90000\\r\\na=fmtp:97 apt=96\\r\\n\",\n    \"type\": \"answer\"\n}"
+    },
+    {
+      "epoch": 1750761455467,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] Signalling state changed to \"new\""
+    },
+    {
+      "epoch": 1750761455468,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] Local description set as{\n    \"sdp\": \"v=0\\r\\no=- 6302073626097263386 2 IN IP4 127.0.0.1\\r\\ns=-\\r\\nt=0 0\\r\\na=group:BUNDLE video0\\r\\na=msid-semantic: WMS\\r\\nm=video 9 UDP/TLS/RTP/SAVPF 96 97\\r\\nc=IN IP4 0.0.0.0\\r\\na=rtcp:9 IN IP4 0.0.0.0\\r\\na=ice-ufrag:Mx2a\\r\\na=ice-pwd:rVKhLr0BULpk7ATIoDhDkrno\\r\\na=ice-options:trickle\\r\\na=fingerprint:sha-256 B8:20:6F:49:08:14:B9:FE:D1:50:BE:4D:58:09:74:11:C7:A7:E7:DA:D5:7E:3A:49:69:79:2E:43:E9:5A:3B:EA\\r\\na=setup:active\\r\\na=mid:video0\\r\\na=recvonly\\r\\na=rtcp-mux\\r\\na=rtcp-rsize\\r\\na=rtpmap:96 H264/90000\\r\\na=rtcp-fb:96 transport-cc\\r\\na=rtcp-fb:96 ccm fir\\r\\na=rtcp-fb:96 nack\\r\\na=rtcp-fb:96 nack pli\\r\\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\\r\\na=rtpmap:97 rtx/90000\\r\\na=fmtp:97 apt=96\\r\\n\",\n    \"type\": \"answer\"\n}"
+    },
+    {
+      "epoch": 1750761455469,
+      "level": "debug",
+      "msg": " Peer Connection is waiting for negotiation..."
+    },
+    {
+      "epoch": 1750761455473,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICEConnection state changed to \"checking\""
+    },
+    {
+      "epoch": 1750761455475,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Sending ICE answer: {\n    \"type\": \"negotiation\",\n    \"content\": {\n        \"type\": \"iceNegotiation\",\n        \"content\": {\n            \"session_id\": \"f631812d-d0b0-4dd9-b3c0-a5dfc9b666bb\",\n            \"consumer_id\": \"51f3c412-a680-4180-838e-453a545dd707\",\n            \"producer_id\": \"34535e9e-82d6-47a8-a458-2b12ec6b4603\",\n            \"ice\": {\n                \"candidate\": \"candidate:2703580315 1 udp 2113937151 fa0a0d7b-2c3f-48c1-a743-4b54659fa3bf.local 63709 typ host generation 0 ufrag Mx2a network-cost 999\",\n                \"sdpMid\": \"video0\",\n                \"sdpMLineIndex\": 0,\n                \"usernameFragment\": \"Mx2a\"\n            }\n        }\n    }\n}"
+    },
+    {
+      "epoch": 1750761455475,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] RTCPeerConnection state changed to \"connecting\""
+    },
+    {
+      "epoch": 1750761455482,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICEConnection state changed to \"connected\""
+    },
+    {
+      "epoch": 1750761455484,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] ICE gathering completed for session f631812d-d0b0-4dd9-b3c0-a5dfc9b666bb"
+    },
+    {
+      "epoch": 1750761455640,
+      "level": "debug",
+      "msg": " [WebRTC] [Session] RTCPeerConnection state changed to \"connected\""
+    },
+    {
+      "epoch": 1750761455754,
+      "level": "log",
+      "msg": " [VideoPlayer] Stream is playing"
+    },
+    {
+      "epoch": 1750761455754,
+      "level": "log",
+      "msg": " [VideoPlayer] Stream is playing"
+    },
+    {
+      "epoch": 1750761455787,
+      "level": "log",
+      "msg": " [VideoPlayer] Stream is playing"
+    },
+    {
+      "epoch": 1750761456674,
+      "level": "warn",
+      "msg": " Window/tab hidden. Disabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761457928,
+      "level": "info",
+      "msg": " Window/tab visible. Enabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761459990,
+      "level": "info",
+      "msg": " Joystick 0 connected. Model: Xbox controller (bluetooth) // VID: 045e // PID: 0b13"
+    },
+    {
+      "epoch": 1750761459990,
+      "level": "info",
+      "msg": " Enabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761463596,
+      "level": "warn",
+      "msg": " Warning: Arming Checks Disabled"
+    },
+    {
+      "epoch": 1750761463600,
+      "level": "warn",
+      "msg": " Backup location parameters are missing or zero"
+    },
+    {
+      "epoch": 1750761463603,
+      "level": "warn",
+      "msg": " Compass performance degraded"
+    },
+    {
+      "epoch": 1750761464477,
+      "level": "info",
+      "msg": " Vehicle armed"
+    },
+    {
+      "epoch": 1750761464722,
+      "level": "log",
+      "msg": " Event sent successfully: Vehicle armed-1750761464477"
+    },
+    {
+      "epoch": 1750761481455,
+      "level": "info",
+      "msg": " Vehicle disarmed"
+    },
+    {
+      "epoch": 1750761481826,
+      "level": "log",
+      "msg": " Event sent successfully: Vehicle disarmed-1750761481454"
+    },
+    {
+      "epoch": 1750761514607,
+      "level": "warn",
+      "msg": " Warning: Arming Checks Disabled"
+    },
+    {
+      "epoch": 1750761514610,
+      "level": "warn",
+      "msg": " Backup location parameters are missing or zero"
+    },
+    {
+      "epoch": 1750761514614,
+      "level": "warn",
+      "msg": " Compass performance degraded"
+    },
+    {
+      "epoch": 1750761515503,
+      "level": "info",
+      "msg": " Vehicle armed"
+    },
+    {
+      "epoch": 1750761516332,
+      "level": "log",
+      "msg": " Event sent successfully: Vehicle armed-1750761515503"
+    },
+    {
+      "epoch": 1750761534697,
+      "level": "warn",
+      "msg": " Window/tab hidden. Disabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761536266,
+      "level": "info",
+      "msg": " Window/tab visible. Enabling joystick forwarding."
+    }
+  ]
+}

@@ -1,0 +1,2531 @@
+{
+  "initialDate": "Jun 24, 2025",
+  "initialTime": "10꞉33꞉55 GMT+0",
+  "events": [
+    {
+      "epoch": 1750761235860,
+      "level": "debug",
+      "msg": " Registered new action Camera Zoom (MAVLink) with id (mavlink-message-action (Camera Zoom (MAVLink)))."
+    },
+    {
+      "epoch": 1750761235860,
+      "level": "debug",
+      "msg": " Registered new action Camera Focus (MAVLink) with id (mavlink-message-action (Camera Focus (MAVLink)))."
+    },
+    {
+      "epoch": 1750761235874,
+      "level": "warn",
+      "msg": " Filesystem storage is only available in Electron."
+    },
+    {
+      "epoch": 1750761235874,
+      "level": "warn",
+      "msg": " Filesystem storage is only available in Electron."
+    },
+    {
+      "epoch": 1750761236051,
+      "level": "log",
+      "msg": " Initializing Sentry telemetry..."
+    },
+    {
+      "epoch": 1750761236276,
+      "level": "debug",
+      "msg": " Error: Needs to handle multiple connections and change the main connection when necessary.This can be done by checking the data coming from the connection and changing after a timeout."
+    },
+    {
+      "epoch": 1750761236276,
+      "level": "log",
+      "msg": " Main connection changed: ws://192.168.2.2/mavlink2rest/ws/mavlink"
+    },
+    {
+      "epoch": 1750761236425,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-mini-widgets-profile-v4' with BlueOS."
+    },
+    {
+      "epoch": 1750761236425,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-saved-profiles-v8' with BlueOS."
+    },
+    {
+      "epoch": 1750761236426,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-default-vehicle-type-profiles' with BlueOS."
+    },
+    {
+      "epoch": 1750761236426,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-mini-widget-last-values' with BlueOS."
+    },
+    {
+      "epoch": 1750761236426,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-enable-voice-alerts' with BlueOS."
+    },
+    {
+      "epoch": 1750761236426,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-never-show-armed-menu-warning' with BlueOS."
+    },
+    {
+      "epoch": 1750761236426,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-selected-alert-speech-voice' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-enabled-alert-levels' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-protocol-mappings-v1' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-protocol-mapping-index-v1' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-standard-mappings-v2' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-hold-last-joystick-input-when-window-hidden' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-default-vehicle-type-protocol-mappings' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-actions-joystick-confirm-required' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-custom-rtc-config' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-ui-glass-effect' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-display-unit-preferences' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-main-menu-style' with BlueOS."
+    },
+    {
+      "epoch": 1750761236427,
+      "level": "debug",
+      "msg": " Started syncing 'cockpit-has-seen-tutorial' with BlueOS."
+    },
+    {
+      "epoch": 1750761236430,
+      "level": "log",
+      "msg": " Using WebRTC configuration from storage."
+    },
+    {
+      "epoch": 1750761236431,
+      "level": "debug",
+      "msg": " [WebRTC] Using webrtc-adapter for [object Object]"
+    },
+    {
+      "epoch": 1750761236431,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761236431,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761236633,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236633,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236633,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236633,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236634,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236635,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236635,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236635,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761236908,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761236908,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761236910,
+      "level": "debug",
+      "msg": " Activated stream 'UDP Stream 0'."
+    },
+    {
+      "epoch": 1750761237365,
+      "level": "debug",
+      "msg": " Executing action callback for action mavlink-message-action (Camera Zoom (MAVLink))."
+    },
+    {
+      "epoch": 1750761237368,
+      "level": "error",
+      "msg": " Error sending MAVLink message: InvalidStateError: Failed to execute 'send' on 'WebSocket': Still in CONNECTING state."
+    },
+    {
+      "epoch": 1750761237369,
+      "level": "debug",
+      "msg": " Executing action callback for action mavlink-message-action (Camera Focus (MAVLink))."
+    },
+    {
+      "epoch": 1750761237648,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761237648,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761237663,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761237674,
+      "level": "debug",
+      "msg": " Canvas context undefined!"
+    },
+    {
+      "epoch": 1750761237697,
+      "level": "info",
+      "msg": " Snackbar info message:"
+    },
+    {
+      "epoch": 1750761237733,
+      "level": "error",
+      "msg": " Failed to get position: (1) Only secure origins are allowed (see: https://goo.gl/Y0ZkNV)."
+    },
+    {
+      "epoch": 1750761237745,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237747,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237747,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237748,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237749,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237749,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237750,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237750,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237750,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237751,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237751,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237752,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237752,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237753,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237753,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237754,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237754,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237755,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761237883,
+      "level": "log",
+      "msg": " Finished loading"
+    },
+    {
+      "epoch": 1750761237909,
+      "level": "debug",
+      "msg": " [WebRTC] Trying to connect to signalling server."
+    },
+    {
+      "epoch": 1750761237909,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Connecting to signalling server on ws://192.168.2.2:6021/"
+    },
+    {
+      "epoch": 1750761237911,
+      "level": "debug",
+      "msg": " Activated stream 'Stream 1'."
+    },
+    {
+      "epoch": 1750761237970,
+      "level": "log",
+      "msg": " Event sent successfully: App started-1750761236051"
+    },
+    {
+      "epoch": 1750761238298,
+      "level": "debug",
+      "msg": " Detected changes in the local value for key 'cockpit-mini-widgets-profile-v4'. Updating BlueOS."
+    },
+    {
+      "epoch": 1750761238298,
+      "level": "debug",
+      "msg": " Value of 'cockpit-mini-widgets-profile-v4' changed, but we haven't finished the initial fetch. Not updating BlueOS."
+    },
+    {
+      "epoch": 1750761238539,
+      "level": "debug",
+      "msg": " Detected changes in the local value for key 'cockpit-saved-profiles-v8'. Updating BlueOS."
+    },
+    {
+      "epoch": 1750761238539,
+      "level": "debug",
+      "msg": " Value of 'cockpit-saved-profiles-v8' changed, but we haven't finished the initial fetch. Not updating BlueOS."
+    },
+    {
+      "epoch": 1750761238746,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238747,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238748,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238749,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238749,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238750,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238751,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238751,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238752,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238752,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238753,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238753,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238754,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238754,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238755,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238757,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761238758,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239754,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239755,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239757,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239759,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239760,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239760,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239761,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239761,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239762,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239762,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239763,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239763,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239764,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239764,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239765,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761239766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240756,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240757,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240757,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240758,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240759,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240760,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240760,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240760,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240761,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240761,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240762,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240763,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240763,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240764,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240764,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240765,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240765,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761240767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241763,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241764,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241765,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241765,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241769,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241769,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241770,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241770,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241771,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241771,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761241772,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242766,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242767,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242768,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242769,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242769,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242770,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242770,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242772,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242774,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242774,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761242775,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243771,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243772,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243773,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243773,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243774,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243774,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243775,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243775,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243776,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243776,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243777,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243777,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243778,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243779,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243779,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243781,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243781,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243782,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761243782,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244781,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244782,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244782,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244783,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244784,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244784,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244784,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244785,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244786,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244787,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244788,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244789,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244789,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244790,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244793,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761244793,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245784,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245785,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245786,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245786,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245786,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245787,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245788,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245788,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245789,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245789,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245790,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245790,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245793,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761245794,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246648,
+      "level": "error",
+      "msg": " Snackbar error message: Error getting info around external widgets from BlueOS."
+    },
+    {
+      "epoch": 1750761246785,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246787,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246788,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246788,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246789,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246790,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246793,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246794,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246794,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246795,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246796,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246796,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246797,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246798,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246798,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761246799,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247791,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247792,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247793,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247794,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247794,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247795,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247795,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247796,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247797,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247798,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247798,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247799,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247800,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247800,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247801,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247802,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247803,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761247803,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248797,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248797,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248798,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248799,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248800,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248800,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248801,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248802,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248802,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248803,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248804,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248804,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248805,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248806,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248807,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248808,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248809,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248809,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761248810,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249799,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249800,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249802,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249802,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249803,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249804,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249805,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249805,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249806,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249806,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249807,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249807,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249808,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249809,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249810,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249811,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249812,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249813,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761249813,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250814,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250815,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250816,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250817,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250818,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250819,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250820,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250820,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250821,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250821,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250822,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250823,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250824,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250825,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250825,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250826,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250827,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250827,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761250828,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251821,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251822,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251823,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251824,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251825,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251826,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251827,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251828,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251828,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251829,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251830,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251831,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251832,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251833,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251833,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251834,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251835,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251836,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761251836,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252827,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252829,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252830,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252831,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252832,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252833,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252834,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252836,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252836,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252837,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252837,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252838,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252839,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252840,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252841,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252843,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252843,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252844,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761252844,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761253813,
+      "level": "warn",
+      "msg": " Window/tab hidden. Disabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761254468,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254469,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254471,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254471,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254473,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254474,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254475,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254476,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254477,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254478,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254480,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254481,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254481,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254482,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254483,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254484,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761254484,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256453,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256454,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256456,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256457,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256458,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256461,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256464,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256466,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256467,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256468,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256470,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256471,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256472,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256474,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256476,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256477,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256480,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761256481,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257474,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257475,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257476,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257478,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257478,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257481,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257481,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257482,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257483,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761257486,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller connection Error [object Event]"
+    },
+    {
+      "epoch": 1750761257488,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Signaller connection closed [object CloseEvent]"
+    },
+    {
+      "epoch": 1750761258463,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258464,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258465,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258466,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258468,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258469,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258470,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258471,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761258473,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259457,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259458,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259460,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259460,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259461,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259462,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259463,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259464,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259464,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259465,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761259468,
+      "level": "debug",
+      "msg": " [WebRTC] [Signaller] Reconnecting to signalling"
+    },
+    {
+      "epoch": 1750761260456,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260459,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260460,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260461,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260462,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260463,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260463,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260465,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260466,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260486,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260913,
+      "level": "info",
+      "msg": " Window/tab visible. Enabling joystick forwarding."
+    },
+    {
+      "epoch": 1750761260915,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260916,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260917,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260917,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260918,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260918,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260919,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260919,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761260919,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261463,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261464,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261465,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261466,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261466,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261467,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261467,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261468,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261469,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261489,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261918,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261919,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261920,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261922,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261923,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261923,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261924,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261925,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761261926,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262472,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262473,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262474,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262475,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262476,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262477,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262479,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262480,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262489,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262922,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262922,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262923,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262923,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262924,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262925,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262926,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262927,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761262928,
+      "level": "debug",
+      "msg": " Waiting for vehicle ID on BlueOS sync routine."
+    },
+    {
+      "epoch": 1750761263233,
+      "level": "warn",
+      "msg": " Window/tab hidden. Disabling joystick forwarding."
+    }
+  ]
+}
