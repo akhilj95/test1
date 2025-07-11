@@ -112,6 +112,9 @@ class Calibration(models.Model):
 #  ------------------------------------------------------------------
 
 class Mission(models.Model):
+    """
+    Represents a misiion that inspects a single target.
+    """
     class TargetType(models.TextChoices):
         PILLAR = "pillar", "Pillar"
         WALL   = "wall",   "Wall"
@@ -142,6 +145,10 @@ class Mission(models.Model):
         return f"{self.rover.name} @ {self.start_time:%Y-%m-%d}"
 
 class SensorDeployment(models.Model):
+    """
+    Represents the specific deployment characteristics of a sensor on
+    a specific mission.
+    """
     mission     = models.ForeignKey(Mission, on_delete=models.CASCADE,
                                     related_name="deployments")
     sensor      = models.ForeignKey(Sensor, on_delete=models.PROTECT,
