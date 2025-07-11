@@ -1,10 +1,12 @@
 from django.db import models
 from django.utils import timezone
+from django.db import transaction
+
 
 # --- 1. Hardware options
 class Rover(models.Model):
-    name           = models.CharField(max_length=100)
-    serial_number  = models.CharField(max_length=10, unique=True)
+    name            = models.CharField(max_length=100)
+    serial_number   = models.CharField(max_length=10, unique=True)
     hardware_config = models.JSONField(blank=True, default=dict)
 
     def __str__(self):
@@ -17,12 +19,12 @@ class Sensor(models.Model):
     """
     class SensorType(models.TextChoices):
         CAMERA = "camera", "Camera"
-        LIDAR = "lidar", "Lidar"
+        COMPASS = "compass", "Compass"
         IMU = "imu", "IMU"
         PRESSURE = "pressure", "Pressure"
         SONAR = "sonar", "Sonar"
 
-    sensor_type = models.CharField(max_length=20, choices=SensorType.choices)
+    sensor_type     = models.CharField(max_length=20, choices=SensorType.choices)
     name            = models.CharField(max_length=100)
     specification   = models.JSONField(blank=True, default=dict)
 
@@ -30,13 +32,8 @@ class Sensor(models.Model):
         return self.name
 
 class Calibration(models.Model):
-    """
-    Optional per-sensor (not per-mission) calibration history.
-    Each row stores the coefficients valid from `effective_from`
-    until it is superseded.
-    """
     sensor          = models.ForeignKey(
-        Sensor,
+        "Sensor",
         on_delete=models.CASCADE,
         related_name="calibrations"
     )
@@ -52,6 +49,16 @@ class Calibration(models.Model):
                 name="one_active_calibration_per_sensor",
             )
         ]
+
+    def save(self, *args, **kwargs):
+        # Wrap in a transaction so “unset olds” + “save new” is atomic
+        with transaction.atomic():
+            if self.active:
+                (Calibration.objects
+                   .filter(sensor=self.sensor, active=True)
+                   .exclude(pk=self.pk)           # skip self on update
+                   .update(active=False))
+            super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.sensor} since {self.effective_from:%Y-%m-%d}"
