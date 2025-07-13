@@ -261,7 +261,7 @@ class MediaAsset(models.Model):
     file_path    = models.CharField(max_length=500)
     start_time   = models.DateTimeField()        # UTC
     end_time     = models.DateTimeField(null=True, blank=True)   # video only
-    fps          = models.DecimalField(max_digits=6, decimal_places=3, null=True, blank=True)      # video only
+    fps          = models.FloatField(null=True, blank=True)      # video only
     file_metadata = models.JSONField(default=dict, blank=True)
     notes        = models.TextField(blank=True)
 
@@ -325,25 +325,70 @@ class FrameIndex(models.Model):
 #  8. Other sensor readings
 #  ------------------------------------------------------------------
 
-# # common base (abstract; no DB table)
-# class BaseReading(models.Model):
-#     deployment = models.ForeignKey("SensorDeployment",
-#                                    on_delete=models.CASCADE,
-#                                    related_name="%(class)s")
-#     timestamp  = models.DateTimeField()
+# common base (abstract; no DB table)
+class SensorSampleBase(models.Model):
+    """
+    Columns common to every raw sensor sample extracted from a .bin/.tlog file.
+    One row = one sample at one instant in one logfile.
+    """
+    log_file   = models.ForeignKey(
+        LogFile, on_delete=models.CASCADE, related_name="%(class)s"
+    )
+    deployment = models.ForeignKey(           # which physical sensor produced it
+        SensorDeployment, on_delete=models.PROTECT, related_name="%(class)s"
+    )
+    # UTC time stamp – fill this once you've converted the log-relative time
+    timestamp  = models.DateTimeField()
 
-#     class Meta:
-#         abstract = True
-#         indexes  = [
-#             models.Index(fields=["deployment", "timestamp"]),
-#         ]
+    class Meta:
+        abstract = True
+        ordering = ["timestamp"]
+        indexes  = [
+            models.Index(fields=["deployment", "timestamp"]),
+        ]
 
-# class ImuReading(BaseReading):
-#     x = models.FloatField()
-#     y = models.FloatField()
-#     z = models.FloatField()
+    # Make sure the row is linked to the correct sensor *type*
+    EXPECTED_SENSOR_TYPE: str = None      # to be overloaded below
+
+    def clean(self):
+        super().clean()
+        if (
+            self.EXPECTED_SENSOR_TYPE
+            and self.deployment.sensor.sensor_type != self.EXPECTED_SENSOR_TYPE
+        ):
+            raise ValidationError(
+                f"Deployment must be of type "
+                f"'{self.EXPECTED_SENSOR_TYPE}' (got "
+                f"'{self.deployment.sensor.sensor_type}')"
+            )
+
+    def __str__(self):
+        return f"{self.deployment} @ {self.timestamp:%H:%M:%S.%f}"
+    
+class ImuSample(SensorSampleBase):
+    """6-DOF IMU: angular rate (rad s⁻¹) + specific force (m s⁻²)."""
+    gx_rad_s = models.FloatField()
+    gy_rad_s = models.FloatField()
+    gz_rad_s = models.FloatField()
+    ax_m_s2  = models.FloatField()
+    ay_m_s2  = models.FloatField()
+    az_m_s2  = models.FloatField()
+
+    EXPECTED_SENSOR_TYPE = Sensor.SensorType.IMU
 
 
-# class CameraFrame(BaseReading):
-#     file = models.FileField(upload_to=media_upload_to)
-#     exposure_ms = models.PositiveIntegerField()
+class MagnetometerSample(SensorSampleBase):
+    """3-axis magnetic field in µT (works for both onboard magnetometers)."""
+    mx_uT = models.FloatField()
+    my_uT = models.FloatField()
+    mz_uT = models.FloatField()
+
+    EXPECTED_SENSOR_TYPE = Sensor.SensorType.COMPASS
+
+
+class PressureSample(SensorSampleBase):
+    """Absolute pressure plus optional temperature (use Pa to keep units SI)."""
+    pressure_pa   = models.FloatField()
+    temperature_C = models.FloatField(null=True, blank=True)
+
+    EXPECTED_SENSOR_TYPE = Sensor.SensorType.PRESSURE
