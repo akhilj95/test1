@@ -126,7 +126,7 @@ class Mission(models.Model):
     )
     start_time   = models.DateTimeField(default=timezone.now)
     end_time     = models.DateTimeField(null=True, blank=True)
-    location     = models.CharField(max_length=255, blank=True)
+    location     = models.CharField(max_length=50, blank=True)
     target_type  = models.CharField(
         max_length=12,                     # safety margin of 6
         choices=TargetType.choices,
@@ -144,7 +144,7 @@ class Mission(models.Model):
         ordering = ["-start_time"]
 
     def __str__(self):
-        return f"{self.rover.name} @ {self.start_time:%Y-%m-%d}"
+        return f"{self.rover.name} - {self.location} @ {self.start_time:%Y-%m-%d %H:%M}"
 
 class SensorDeployment(models.Model):
     """
@@ -261,7 +261,7 @@ class MediaAsset(models.Model):
     file_path    = models.CharField(max_length=500)
     start_time   = models.DateTimeField()        # UTC
     end_time     = models.DateTimeField(null=True, blank=True)   # video only
-    fps          = models.FloatField(null=True, blank=True)      # video only
+    fps          = models.DecimalField(max_digits=6, decimal_places=3, null=True, blank=True)      # video only
     file_metadata = models.JSONField(default=dict, blank=True)
     notes        = models.TextField(blank=True)
 
@@ -377,7 +377,7 @@ class ImuSample(SensorSampleBase):
     EXPECTED_SENSOR_TYPE = Sensor.SensorType.IMU
 
 
-class MagnetometerSample(SensorSampleBase):
+class CompassSample(SensorSampleBase):
     """3-axis magnetic field in µT (works for both onboard magnetometers)."""
     mx_uT = models.FloatField()
     my_uT = models.FloatField()

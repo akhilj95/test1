@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('schema-viewer/', include('schema_viewer.urls')),
-    #path('missions/', include('missions.urls')),
+    path('missions/', include('missions.urls')),
 ]
