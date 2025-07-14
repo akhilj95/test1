@@ -121,6 +121,11 @@ class Mission(models.Model):
         PILLAR = "pillar", "Pillar"
         WALL   = "wall",   "Wall"
 
+    class LevelChoices(models.TextChoices):
+        LOW = "low", "Low"
+        MEDIUM = "medium", "Medium"
+        HIGH = "high", "High"
+
     rover        = models.ForeignKey(
         RoverHardware, on_delete=models.PROTECT, related_name="missions"
     )
@@ -133,7 +138,28 @@ class Mission(models.Model):
         default=TargetType.WALL,
     )    
     max_depth    = models.FloatField(null=True, blank=True)
-    description  = models.TextField(blank=True)
+    visibility = models.CharField(
+        max_length=6,
+        choices=LevelChoices.choices,
+        default=LevelChoices.MEDIUM,
+        blank=True,
+        help_text="Visibility quality: low, medium, or high"
+    )
+    cloud_cover = models.CharField(
+        max_length=6,
+        choices=LevelChoices.choices,
+        default=LevelChoices.MEDIUM,
+        blank=True,
+        help_text="Cloud cover level: low, medium, or high"
+    )
+    tide_level = models.CharField(
+        max_length=6,
+        choices=LevelChoices.choices,
+        default=LevelChoices.MEDIUM,
+        blank=True,
+        help_text="Tide level: low, medium, or high"
+    )
+    notes  = models.TextField(blank=True)
 
     def clean(self):
         if self.end_time and self.start_time and self.end_time <= self.start_time:
@@ -201,7 +227,8 @@ class LogFile(models.Model):
         blank=True
     )
     created_at = models.DateTimeField(default=timezone.now)
-    description = models.TextField(blank=True)
+    notes = models.TextField(blank=True)
+    already_parsed = models.BooleanField(default=False)
 
     def clean(self):
         if not self.bin_path and not self.tlog_path:
@@ -348,7 +375,7 @@ class SensorSampleBase(models.Model):
         ]
 
     # Make sure the row is linked to the correct sensor *type*
-    EXPECTED_SENSOR_TYPE: str = None      # to be overloaded below
+    EXPECTED_SENSOR_TYPE: str = ""      # to be overloaded below
 
     def clean(self):
         super().clean()
