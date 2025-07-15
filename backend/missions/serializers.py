@@ -66,7 +66,7 @@ class MissionSerializer(serializers.ModelSerializer):
             "location",
             "target_type",
             "max_depth",
-            "description",
+            "notes",
         )
 
     def validate(self, attrs):
@@ -87,6 +87,7 @@ class MissionSerializer(serializers.ModelSerializer):
 class SensorDeploymentSerializer(serializers.ModelSerializer):
     latest_coefficients = serializers.SerializerMethodField(read_only=True)
     sensor_name = serializers.CharField(source="sensor.name", read_only=True)
+    instance = serializers.ChoiceField(choices=[(0, '0'), (1, '1')], default=0)
 
     class Meta:
         model = SensorDeployment
@@ -98,6 +99,7 @@ class SensorDeploymentSerializer(serializers.ModelSerializer):
             "position",
             "calibration",
             "latest_coefficients",
+            "instance",
         )
 
     def get_latest_coefficients(self, obj):
@@ -114,7 +116,7 @@ class LogFileSerializer(serializers.ModelSerializer):
             "bin_path",
             "tlog_path",
             "created_at",
-            "description",
+            "notes",
         )
 
     def validate(self, attrs):
@@ -126,21 +128,17 @@ class LogFileSerializer(serializers.ModelSerializer):
             )
         return attrs
 
+class NavSampleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NavSample
+        fields = ('id', 'mission', 'timestamp', 'depth_m', 'roll_deg', 'pitch_deg', 'yaw_deg')
+        read_only_fields = ('id',)
+
 
 class _BaseSampleSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ("id", "deployment", "timestamp", "depth_m")
+        fields = ("id", "deployment", "timestamp")
         read_only_fields = ("id",)
-
-
-class NavSampleSerializer(_BaseSampleSerializer):
-    class Meta(_BaseSampleSerializer.Meta):
-        model = NavSample
-        fields = _BaseSampleSerializer.Meta.fields + (
-            "roll_deg",
-            "pitch_deg",
-            "yaw_deg",
-        )
 
 class ImuSampleSerializer(_BaseSampleSerializer):
     class Meta(_BaseSampleSerializer.Meta):

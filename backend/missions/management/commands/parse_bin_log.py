@@ -88,9 +88,9 @@ class Command(BaseCommand):
         deployments_by_sensor_type = {}
         for deployment in deployments:
             sensor_type = deployment.sensor.sensor_type
-            if sensor_type not in deployments_by_sensor_type:
-                deployments_by_sensor_type[sensor_type] = []
-            deployments_by_sensor_type[sensor_type].append(deployment)
+            instance = getattr(deployment, "instance", None)  # assumes deployment.instance exists
+            if instance is not None:
+                deployments_by_sensor_type.setdefault(sensor_type, {})[instance] = deployment
         
         # Initialize the simplified loader
         loader = SimplifiedBinLoader(
@@ -134,9 +134,6 @@ class SimplifiedBinLoader:
         self.baro_instances = baro_instances
         self.batch_size = batch_size
         self.stdout = stdout
-        
-        # Navigation state for combining ATT and AHR2 data
-        self.nav_data_cache = {}
         
         self.stats = {
             "total_messages": 0,
@@ -209,8 +206,6 @@ class SimplifiedBinLoader:
                     self._process_mag_message(msg, timestamp, batches)
                 elif msg_type == "BARO":
                     self._process_baro_message(msg, timestamp, batches)
-                elif msg_type == "ATT":
-                    self._process_att_message(msg, timestamp, batches)
                 elif msg_type == "AHR2":
                     self._process_ahr2_message(msg, timestamp, batches)
                 
@@ -319,32 +314,19 @@ class SimplifiedBinLoader:
         self.stats["saved_samples"] += 1
         self.stats["by_type"]["BARO"] = self.stats["by_type"].get("BARO", 0) + 1
     
-    def _process_att_message(self, msg, timestamp, batches):
-        """Process ATT messages for navigation attitude data."""
-        # Create navigation sample with attitude data
-        sample = NavSample(
-            mission=self.mission,
-            timestamp=timestamp,
-            roll_deg=getattr(msg, 'Roll', None),
-            pitch_deg=getattr(msg, 'Pitch', None),
-            yaw_deg=getattr(msg, 'Yaw', None),
-            depth_m=None,  # Will be filled by AHR2 if available
-        )
-        
-        batches[NavSample].append(sample)
-        self.stats["saved_samples"] += 1
-        self.stats["by_type"]["ATT"] = self.stats["by_type"].get("ATT", 0) + 1
-    
     def _process_ahr2_message(self, msg, timestamp, batches):
         """Process AHR2 messages for navigation altitude data."""
         # Create navigation sample with altitude data
+        alt = getattr(msg, 'Alt', None)
+        # depth is negative of altitude
+        depth_m = -alt if alt is not None else None
         sample = NavSample(
             mission=self.mission,
             timestamp=timestamp,
             roll_deg=getattr(msg, 'Roll', None),
             pitch_deg=getattr(msg, 'Pitch', None),
             yaw_deg=getattr(msg, 'Yaw', None),
-            depth_m=getattr(msg, 'Alt', None),  # Altitude in meters
+            depth_m=depth_m,  # Depth in meters
         )
         
         batches[NavSample].append(sample)
@@ -353,14 +335,10 @@ class SimplifiedBinLoader:
     
     def _get_deployment_for_sensor_type(self, sensor_type, instance):
         """Get deployment for a specific sensor type and instance."""
-        deployments = self.deployments_by_sensor_type.get(sensor_type, [])
-        
-        # For now, we'll use the first deployment of each type
-        # In a more sophisticated system, you might want to match by instance
-        if deployments:
-            return deployments[0]
-        
-        # Log warning if no deployment found
+        instances = self.deployments_by_sensor_type.get(sensor_type, {})
+        deployment = instances.get(instance)
+        if deployment:
+            return deployment
         logger.warning(f"No deployment found for sensor type '{sensor_type}' instance {instance}")
         return None
     

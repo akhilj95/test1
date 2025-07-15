@@ -76,7 +76,7 @@ class Calibration(models.Model):
     Only one calibration can be active at a time for a sensor.
     """
     sensor          = models.ForeignKey(
-        "Sensor",
+        Sensor,
         on_delete=models.PROTECT,
         related_name="calibrations"
     )
@@ -184,6 +184,18 @@ class SensorDeployment(models.Model):
     calibration = models.ForeignKey(Calibration, on_delete=models.PROTECT,
                                     null=True, blank=True)
     position    = models.CharField(max_length=50)   # e.g. “bow-port”
+
+    INSTANCE_CHOICES = [
+        (0, '0'),
+        (1, '1'),
+    ]
+    # Instance number for sensors types that can have multiple instances (e.g. Compass or Camera)
+    # 0 for primary, 1 for secondary (if applicable)
+    instance = models.IntegerField(
+        choices=INSTANCE_CHOICES,
+        default=0,
+        help_text="Sensor type instance number (0 or 1 only)."
+    )
 
     def clean(self):
         super().clean()  # Call the parent clean method first
@@ -362,7 +374,7 @@ class SensorSampleBase(models.Model):
         LogFile, on_delete=models.CASCADE, related_name="%(class)s"
     )
     deployment = models.ForeignKey(           # which physical sensor produced it
-        SensorDeployment, on_delete=models.PROTECT, related_name="%(class)s"
+        SensorDeployment, on_delete=models.CASCADE, related_name="%(class)s"
     )
     # UTC time stamp – fill this once you've converted the log-relative time
     timestamp  = models.DateTimeField()
