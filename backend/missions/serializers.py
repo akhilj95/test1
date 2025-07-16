@@ -3,6 +3,7 @@ from missions.models import (
     RoverHardware, Sensor, Calibration, Mission,
     SensorDeployment, LogFile, NavSample,
     ImuSample, CompassSample, PressureSample,
+    MediaAsset, FrameIndex,
 )
 
 class RoverHardwareSerializer(serializers.ModelSerializer):
@@ -66,6 +67,9 @@ class MissionSerializer(serializers.ModelSerializer):
             "location",
             "target_type",
             "max_depth",
+            "visibility",
+            "cloud_cover",
+            "tide_level",
             "notes",
         )
 
@@ -168,3 +172,46 @@ class PressureSampleSerializer(_BaseSampleSerializer):
             "pressure_pa",
             "temperature_C",
         )
+
+class MediaAssetSerializer(serializers.ModelSerializer):
+    deployment_details = serializers.SerializerMethodField(read_only=True)
+    mission_location = serializers.CharField(source='deployment.mission.location', read_only=True)
+    
+    class Meta:
+        model = MediaAsset
+        fields = (
+            'id', 'deployment', 'media_type', 'file_path', 'start_time', 
+            'end_time', 'fps', 'file_metadata', 'notes', 'deployment_details',
+            'mission_location'
+        )
+        read_only_fields = ('id',)
+    
+    def get_deployment_details(self, obj):
+        return {
+            'sensor_name': obj.deployment.sensor.name,
+            'mission_id': obj.deployment.mission.id,
+            'mission_location': obj.deployment.mission.location
+        }
+
+class FrameIndexSerializer(serializers.ModelSerializer):
+    media_asset_path = serializers.CharField(source='media_asset.file_path', read_only=True)
+    nav_sample_details = serializers.SerializerMethodField(read_only=True)
+
+    class Meta:
+        model = FrameIndex
+        fields = (
+            'id', 'media_asset', 'frame_number', 'timestamp', 'servo_pitch_deg',
+            'closest_nav_sample', 'nav_match_time_diff_ms', 'media_asset_path',
+            'nav_sample_details'
+        )
+        read_only_fields = ('id',)
+    
+    def get_nav_sample_details(self, obj):
+        if obj.closest_nav_sample:
+            return {
+                'depth_m': obj.closest_nav_sample.depth_m,
+                'yaw_deg': obj.closest_nav_sample.yaw_deg,
+                'pitch_deg': obj.closest_nav_sample.pitch_deg,
+                'roll_deg': obj.closest_nav_sample.roll_deg
+            }
+        return None

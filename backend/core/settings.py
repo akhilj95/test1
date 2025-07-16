@@ -20,6 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = BASE_DIR.parent
 DATA_DIR = PROJECT_DIR / 'data'
 
+# Media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = DATA_DIR
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 

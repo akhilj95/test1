@@ -209,6 +209,12 @@ class SensorDeployment(models.Model):
             models.Index(fields=["mission"]),
             models.Index(fields=["sensor"]),
         ]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["mission", "sensor", "instance"],
+                name="unique_sensor_instance_per_mission"
+            )
+        ]
     
     def __str__(self):
         return f"{self.sensor} on {self.mission} ({self.position})"
@@ -317,6 +323,8 @@ class MediaAsset(models.Model):
                 raise ValidationError("end_time must be after start_time")
             if not self.fps or self.fps <= 0:
                 raise ValidationError("fps must be positive")
+            if self.end_time and not timezone.is_aware(self.end_time):
+                raise ValidationError("End time must be timezone-aware.")
 
     class Meta:
         indexes = [models.Index(fields=["start_time"])]
@@ -339,6 +347,9 @@ class FrameIndex(models.Model):
     nav_match_time_diff_ms = models.IntegerField(null=True, blank=True)
 
     def clean(self):
+        super().clean()
+        if self.timestamp and not timezone.is_aware(self.timestamp):
+            raise ValidationError("Timestamp must be timezone-aware.")
         # frame timestamps must lie inside the clip boundaries
         if self.timestamp < self.media_asset.start_time:
             raise ValidationError("Frame timestamp before video/image start_time")
@@ -400,6 +411,8 @@ class SensorSampleBase(models.Model):
                 f"'{self.EXPECTED_SENSOR_TYPE}' (got "
                 f"'{self.deployment.sensor.sensor_type}')"
             )
+        if self.timestamp and not timezone.is_aware(self.timestamp):
+            raise ValidationError("Timestamp must be timezone-aware (UTC).")
 
     def __str__(self):
         return f"{self.deployment} @ {self.timestamp:%H:%M:%S.%f}"
