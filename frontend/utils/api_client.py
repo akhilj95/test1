@@ -169,3 +169,16 @@ class APIClient:
         missions = self.get_missions()
         locations = list(set(mission.get('location', '') for mission in missions if mission.get('location')))
         return sorted(locations)
+
+    # helping find frames
+    def find_frames(self, location, depth, yaw, d_tol, y_tol):
+        """
+        Find frames at a location within a given depth and yaw tolerance.
+        """
+        return self.get_media_by_location(
+            location=location,
+            depth_min=depth - d_tol,
+            depth_max=depth + d_tol,
+            yaw_min=yaw - y_tol,
+            yaw_max=yaw + y_tol
+        )
