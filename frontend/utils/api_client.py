@@ -48,6 +48,12 @@ class APIClient:
         except:
             return False
     
+    # Rover methods
+    def get_rovers(self) -> List[Dict]:
+        """Get all rover hardware"""
+        response = self._make_request('GET', '/rovers/')
+        return response.get('results', []) if 'results' in response else response if isinstance(response, list) else []
+
     # Mission methods
     def get_missions(self) -> List[Dict]:
         """Get all missions"""
@@ -69,6 +75,11 @@ class APIClient:
         """Get a specific sensor"""
         return self._make_request('GET', f'/sensors/{sensor_id}/')
     
+    # Deployment methods
+    def get_deployments(self) -> List[Dict]:
+        """Get all sensor deployments"""
+        response = self._make_request('GET', '/deployments/')
+        return response.get('results', []) if 'results' in response else response if isinstance(response, list) else []    
 
     # Calibration methods
     def get_calibrations(self) -> List[Dict]:

@@ -123,7 +123,7 @@ def main():
 
                 # Display mission details for all selected missions
                 if selected_missions or st.session_state.get('selected_missions'):
-                    missions_to_show = selected_missions or st.session_state.get('selected_missions')
+                    missions_to_show = selected_missions or st.session_state.get('selected_missions') or []
                     st.markdown("---")
                     for mission in missions_to_show:
                         display_mission_details(mission)
@@ -154,7 +154,8 @@ def main():
             st.error(f"Error loading missions: {str(e)}")
     
     with tab2:
-        create_mission_form()
+        st.info("Mission creation not yet implemented.")
+        # create_mission_form()
     
     # Refresh button
     if st.button("🔄 Refresh Data"):
