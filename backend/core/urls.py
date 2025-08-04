@@ -24,6 +24,3 @@ urlpatterns = [
     path('schema-viewer/', include('schema_viewer.urls')),
     path('api/', include('missions.urls')),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
