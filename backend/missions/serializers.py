@@ -7,37 +7,17 @@ from missions.models import (
 )
 
 class RoverHardwareSerializer(serializers.ModelSerializer):
-    effective_from_display = serializers.SerializerMethodField(read_only=True)
-
     class Meta:
         model = RoverHardware
-        fields = (
-            "id",
-            "name",
-            "effective_from",
-            "effective_from_display",
-            "hardware_config",
-            "active",
-        )
-        read_only_fields = ("id", "effective_from_display", "active")
-
-    def get_effective_from_display(self, obj):
-        # Preserve microseconds in ISO 8601
-        if not obj.effective_from:
-            return None
-        return obj.effective_from.isoformat()
+        fields = ("id", "name", "effective_from", "hardware_config", "active")
+        read_only_fields = ("id", "active")
 
 
 class CalibrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Calibration
-        fields = (
-            "id",
-            "effective_from",
-            "coefficients",
-            "active",
-        )
-        read_only_fields = ("id", "effective_from", "active")
+        fields = ("id", "effective_from", "coefficients", "active")
+        read_only_fields = ("id", "active")
 
 
 class SensorSerializer(serializers.ModelSerializer):
@@ -46,7 +26,7 @@ class SensorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sensor
         fields = ("id", "name", "sensor_type", "specification", "active_calibration")
-        read_only_fields = ("id", "active_calibration")
+        read_only_fields = ("id",)
 
     def get_active_calibration(self, obj):
         active = getattr(obj, "_prefetched_objects_cache", {}).get("calibrations")

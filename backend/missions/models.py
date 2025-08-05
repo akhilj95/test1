@@ -215,6 +215,11 @@ class SensorDeployment(models.Model):
                 name="unique_sensor_instance_per_mission"
             )
         ]
+
+    # making sure validation is done before saving
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
     
     def __str__(self):
         return f"{self.sensor} on {self.mission} ({self.position})"
@@ -259,6 +264,11 @@ class LogFile(models.Model):
         ]
         ordering = ["-created_at"]
 
+    # making sure validation is done before saving
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
+
     def __str__(self):
         files = []
         if self.bin_path:
@@ -296,6 +306,11 @@ class NavSample(models.Model):
 #  6. Video and image data
 #  ------------------------------------------------------------------
 class MediaAsset(models.Model):
+    """
+    Represents a raw media file generated during a mission. Media can be images or videos.
+    It could be data from one of the cameras or the imaging sonar.
+    Paths to files are stored as strings, assuming external file management.
+    """
     class MediaType(models.TextChoices):
         IMAGE = "image", "Image"
         VIDEO = "video", "Video"
@@ -321,8 +336,6 @@ class MediaAsset(models.Model):
                 raise ValidationError("Videos require end_time")
             if self.end_time <= self.start_time:
                 raise ValidationError("end_time must be after start_time")
-            if not self.fps or self.fps <= 0:
-                raise ValidationError("fps must be positive")
             if self.end_time and not timezone.is_aware(self.end_time):
                 raise ValidationError("End time must be timezone-aware.")
 
@@ -332,6 +345,13 @@ class MediaAsset(models.Model):
 
 
 class FrameIndex(models.Model):
+    """
+    Represents a frame in a media asset, which could be an image or a video.
+    Each frame is linked to a media asset and optionally to a navigation sample.
+    It contains metadata about the frame, such as its number, timestamp, and servo pitch.
+    This allows for detailed indexing of frames within a media asset.
+    It could be data from one of the cameras or the imaging sonar.
+    """
     media_asset   = models.ForeignKey(
         MediaAsset, on_delete=models.CASCADE, related_name="frames")
     frame_number  = models.PositiveIntegerField(null=True, blank=True)
@@ -369,7 +389,7 @@ class FrameIndex(models.Model):
 #  ------------------------------------------------------------------
 #  7. Sonar data
 #  ------------------------------------------------------------------
-
+# For sonar data as text files, to be implemented later.
 
 #  ------------------------------------------------------------------
 #  8. Other sensor readings
