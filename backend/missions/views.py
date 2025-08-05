@@ -16,7 +16,11 @@ from missions.serializers import (
     ImuSampleSerializer, CompassSampleSerializer, PressureSampleSerializer,
     MediaAssetSerializer, FrameIndexSerializer,
 )
-from missions.filters import MissionFilter  # If you have custom filters
+from missions.filters import MissionFilter
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# DJANGO REST FRAMEWORK DEFAULT SETTINGS ARE SET IN core/settings.py
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # ------------------------------------------------------------------
 # Rover Hardware
