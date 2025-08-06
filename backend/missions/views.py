@@ -26,7 +26,7 @@ from missions.filters import MissionFilter, MediaAssetFilter
 # Rover Hardware
 # ------------------------------------------------------------------
 class RoverHardwareViewSet(viewsets.ModelViewSet):
-    queryset = RoverHardware.objects.all()
+    queryset = RoverHardware.objects.prefetch_related("missions").all()
     serializer_class = RoverHardwareSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     search_fields = ["name"]
@@ -60,7 +60,7 @@ class MissionViewSet(viewsets.ModelViewSet):
     serializer_class = MissionSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     filterset_class = MissionFilter
-    search_fields = ["description", "location"]
+    search_fields = ["notes", "location"]
     ordering_fields = ["start_time", "max_depth"]
 
 # ------------------------------------------------------------------
@@ -90,7 +90,7 @@ class NavSampleViewSet(viewsets.ModelViewSet):
     queryset = NavSample.objects.select_related("mission").all()
     serializer_class = NavSampleSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
-    filterset_fields = ["mission", "depth_m"]
+    filterset_fields = ["mission", "depth_m", "timestamp"]
     ordering_fields = ["timestamp", "depth_m"]
 
 # ------------------------------------------------------------------
@@ -129,7 +129,7 @@ class PressureSampleViewSet(viewsets.ModelViewSet):
 class MediaAssetViewSet(viewsets.ModelViewSet):
     queryset = MediaAsset.objects.select_related(
         'deployment__mission', 'deployment__sensor'
-    ).all()
+    ).prefetch_related('frames').all()
     serializer_class = MediaAssetSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     filterset_class = MediaAssetFilter
