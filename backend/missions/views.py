@@ -16,7 +16,7 @@ from missions.serializers import (
     ImuSampleSerializer, CompassSampleSerializer, PressureSampleSerializer,
     MediaAssetSerializer, FrameIndexSerializer,
 )
-from missions.filters import MissionFilter
+from missions.filters import MissionFilter, MediaAssetFilter
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # DJANGO REST FRAMEWORK DEFAULT SETTINGS ARE SET IN core/settings.py
@@ -132,51 +132,9 @@ class MediaAssetViewSet(viewsets.ModelViewSet):
     ).all()
     serializer_class = MediaAssetSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
-    filterset_fields = ['media_type', 'deployment__mission__location']
-    search_fields = ['file_path', 'deployment__mission__location']
+    filterset_class = MediaAssetFilter
+    search_fields = ['deployment__mission__location',]
     ordering_fields = ['start_time']
-    
-    @action(detail=False, methods=['get'])
-    def by_location(self, request):
-        """
-        Get all media assets from a specific location across missions.
-        Supports filtering by depth and yaw from associated nav samples.
-        """
-        location = request.query_params.get('location')
-        depth_min = request.query_params.get('depth_min')
-        depth_max = request.query_params.get('depth_max')
-        yaw_min = request.query_params.get('yaw_min')
-        yaw_max = request.query_params.get('yaw_max')
-        
-        if not location:
-            return Response({'error': 'location parameter is required'}, status=400)
-        
-        # Start with media assets from the specified location
-        queryset = self.queryset.filter(deployment__mission__location=location)
-        
-        # Apply nav sample filtering if provided
-        if any([depth_min, depth_max, yaw_min, yaw_max]):
-            frame_filters = Q()
-            
-            if depth_min is not None:
-                frame_filters &= Q(frames__closest_nav_sample__depth_m__gte=float(depth_min))
-            if depth_max is not None:
-                frame_filters &= Q(frames__closest_nav_sample__depth_m__lte=float(depth_max))
-            if yaw_min is not None:
-                frame_filters &= Q(frames__closest_nav_sample__yaw_deg__gte=float(yaw_min))
-            if yaw_max is not None:
-                frame_filters &= Q(frames__closest_nav_sample__yaw_deg__lte=float(yaw_max))
-            
-            queryset = queryset.filter(frame_filters).distinct()
-        
-        # Paginate the results
-        page = self.paginate_queryset(queryset)
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
-        
-        serializer = self.get_serializer(queryset, many=True)
-        return Response(serializer.data)
 
 # ------------------------------------------------------------------
 # Frame Index

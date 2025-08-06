@@ -200,9 +200,16 @@ class MediaAssetSerializer(serializers.ModelSerializer):
     def get_deployment_details(self, obj):
         return {
             'sensor_name': obj.deployment.sensor.name,
+            'sensor_type': obj.deployment.sensor.sensor_type,
             'mission_id': obj.deployment.mission.id,
             'mission_location': obj.deployment.mission.location
         }
+    
+    # Call validation from the parent class
+    def validate(self, attrs):
+        instance = MediaAsset(**attrs)
+        instance.clean()
+        return attrs
 
 # Serializer for FrameIndex model linking frames of media to navigation samples
 class FrameIndexSerializer(serializers.ModelSerializer):

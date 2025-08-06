@@ -2,6 +2,10 @@ from django.db import models
 from django.utils import timezone
 from django.db import transaction
 from django.core.exceptions import ValidationError
+import logging
+
+# Get a logger instance
+logger = logging.getLogger(__name__)
 
 #  ------------------------------------------------------------------
 #  1. Hardware options
@@ -31,14 +35,18 @@ class RoverHardware(models.Model):
 
     def save(self, *args, **kwargs):
         # Ensure that, per rover `name`, only one row remains `active=True`.
-        with transaction.atomic():
-            # Wrap in a transaction so “unset olds” + “save new” is atomic
-            if self.active:
-                (RoverHardware.objects
-                    .filter(name=self.name, active=True)
-                    .exclude(pk=self.pk)                  # skip self on update
-                    .update(active=False))
-            super().save(*args, **kwargs)
+        try:
+            with transaction.atomic():
+                # Wrap in a transaction so “unset olds” + “save new” is atomic
+                if self.active:
+                    (RoverHardware.objects
+                        .filter(name=self.name, active=True)
+                        .exclude(pk=self.pk)                  # skip self on update
+                        .update(active=False))
+                super().save(*args, **kwargs)
+        except Exception as e:
+            logger.error(f"Failed to save RoverHardware {self.name}: {e}")
+            raise
 
     def __str__(self):
         status = "Active" if self.active else "Inactive"
@@ -326,11 +334,17 @@ class MediaAsset(models.Model):
     notes        = models.TextField(blank=True)
 
     def clean(self):
+        # Ensure file_path is not empty
+        if not self.file_path.strip():
+            raise ValidationError("File path cannot be empty")
+        # Making sure start_time is timezone-aware
+        if not timezone.is_aware(self.start_time):
+            raise ValidationError("Start time must be timezone-aware.")
         # Images: no end_time / fps allowed
         if self.media_type == self.MediaType.IMAGE:
             if self.end_time or self.fps:
                 raise ValidationError("Images must not have end_time or fps")
-        # Videos: ensure end_time > start_time and fps > 0
+        # Videos: ensure end_time > start_time
         if self.media_type == self.MediaType.VIDEO:
             if not self.end_time:
                 raise ValidationError("Videos require end_time")

@@ -42,4 +42,5 @@ class MediaAssetFilter(filters.FilterSet):
             'start_time': ['gte', 'lte'],
             'deployment__mission': ['exact'],
             'deployment__sensor': ['exact'],
+            'deployment__sensor__sensor_type': ['exact'],
         }
