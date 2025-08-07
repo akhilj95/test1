@@ -1,3 +1,6 @@
 # Ignore all large video files
 *.mkv
 *.webm
+
+# Ignore all __pycache__
+__pycache__/
