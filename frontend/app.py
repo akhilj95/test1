@@ -38,7 +38,7 @@ def main():
     
     # Quick stats
     try:
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
             missions = st.session_state.api_client.get_missions()
@@ -53,8 +53,17 @@ def main():
             st.metric("📊 Calibrations", len(calibrations) if calibrations else 0)
         
         with col4:
-            media_assets = st.session_state.api_client.get_media_assets()
-            st.metric("🎥 Media Assets", len(media_assets) if media_assets else 0)
+            media_response = st.session_state.api_client.get_media_assets(filters=None)
+            media_count = 0
+            if isinstance(media_response, dict):
+                media_count = media_response.get('count', 0)
+            elif isinstance(media_response, list):
+                media_count = len(media_response)
+            st.metric("🎥 Media Assets", media_count)
+    
+        with col5:
+            rovers = st.session_state.api_client.get_rovers()
+            st.metric("🚖 Rovers", len(rovers) if rovers else 0)
             
     except Exception as e:
         st.error(f"Error loading dashboard stats: {str(e)}")

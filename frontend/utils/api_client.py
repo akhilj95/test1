@@ -93,7 +93,59 @@ class APIClient:
     
 
     # Media Asset methods
-    def get_media_assets(self, params: Optional[Dict] = None) -> List[Dict]:
-        """Get media assets with optional filtering"""
-        response = self._make_request('GET', '/media-assets/', params=params)
-        return response.get('results', []) if 'results' in response else response if isinstance(response, list) else []
+    def get_media_assets(self, filters=None, page=None, page_size=None):
+        """
+        Get media assets with optional filtering and pagination
+        
+        Args:
+            filters (dict): Filter parameters matching MediaAssetFilter
+            page (int): Page number for pagination
+            page_size (int): Number of results per page
+        
+        Returns:
+            dict: Paginated response with results, count, next, previous
+        """
+        params = {}
+
+        # Add filters
+        if filters:
+            for key, value in filters.items():
+                if value is not None and value != "":
+                    params[key] = value
+        
+        # Add pagination
+        if page:
+            params['page'] = page
+        if page_size:
+            params['page_size'] = page_size
+        
+        return self._make_request("GET", "/media-assets/", params=params)
+
+    def get_frame_indices(self, media_asset_id=None, filters=None):
+        """
+        Get frame indices with optional filtering
+        
+        Args:
+            media_asset_id (int): Filter by specific media asset
+            filters (dict): Additional filter parameters
+        
+        Returns:
+            list: Frame indices data
+        """
+        params = {}
+        
+        if media_asset_id:
+            params['media_asset'] = media_asset_id
+        
+        if filters:
+            for key, value in filters.items():
+                if value is not None and value != "":
+                    params[key] = value
+        
+        response = self._make_request("GET", "/frame-indices/", params=params)
+        
+        # Handle paginated response
+        if isinstance(response, dict) and 'results' in response:
+            return response['results']
+        return response if isinstance(response, list) else []
+    

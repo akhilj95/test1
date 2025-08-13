@@ -146,6 +146,10 @@ class FrameIndexViewSet(viewsets.ModelViewSet):
     serializer_class = FrameIndexSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     filterset_fields = [
-        'media_asset', 'closest_nav_sample__depth_m', 'closest_nav_sample__yaw_deg'
+        'media_asset',
+        'frame_number',
+        'closest_nav_sample__depth_m',
+        'closest_nav_sample__yaw_deg',
     ]
     ordering_fields = ['timestamp', 'frame_number']
+
