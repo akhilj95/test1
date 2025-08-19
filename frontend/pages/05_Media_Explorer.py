@@ -125,7 +125,7 @@ st.sidebar.metric("Selected", len(selected_assets))
 # Detailed previews
 # -------------------------------------------------------------------
 for asset in selected_assets:
-    st.subheader(f"Media ID {asset['id']} – {asset['media_type'].capitalize()}")
+    st.subheader(f"Media ID {asset['id']} - {asset['media_type'].capitalize()}")
 
     try:
         file_path = validate_and_serve_media(asset.get("file_path", ""), str(MEDIA_ROOT))
